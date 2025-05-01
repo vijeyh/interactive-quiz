@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Interactive Quiz</h2>
+
+      <div class="ques">
+        <p>1. What is the capital of France?</p>
+        <label><input type="radio" name="q1" value="paris" />Paris</label>
+        <label><input type="radio" name="q1" value="london" />London</label>
+        <label><input type="radio" name="q1" value="berlin" />Berlin</label>
+      </div>
+
+      <div class="ques">
+        <p>2. Which planet is known as the Red Planet?</p>
+        <label><input type="radio" name="q2" value="mars" />Mars</label>
+        <label><input type="radio" name="q2" value="venus" />Venus</label>
+        <label><input type="radio" name="q2" value="jupiter" />Jupiter</label>
+      </div>
+
+      <div class="ques">
+        <p>3. What is the largest animal in the world?</p>
+        <label
+          ><input type="radio" name="q3" value="blue whale" />Blue Whale</label
+        >
+        <label><input type="radio" name="q3" value="elephant" />Elephant</label>
+        <label><input type="radio" name="q3" value="giraffee" />Giraffee</label>
+      </div>
+
+      <button id="submit">Submit</button>
+
+      <div id="result">
+        <h3>Your result is</h3>
+        <p>Score: <span id="score">0</span> /3</p>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
